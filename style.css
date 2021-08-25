@@ -1,0 +1,515 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Merriweather&display=swap");
+
+:root {
+  --om: #5f9485;
+  --twoThree: #232323;
+  
+}
+
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+ font-weight: 100;
+ font-family: Playfair Display;
+
+}
+
+
+.navbar{
+  background-color: rgba(255, 255, 255,.3)
+}
+
+.nav-link,
+.navbar-brand {
+  
+  color: var(--om);
+  cursor: pointer;
+  font-size: 1rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-right: 1.2rem;
+}
+
+.nav-link:hover {
+  letter-spacing: 4px;
+  font-size: 1rem;
+  color: var(--om);
+  text-shadow: inset 1px .1rem lightGrey;
+  
+  
+  
+
+}
+
+.nav-link:active{
+  background-color: transparent;
+  border: 1px solid var(--om);
+  transition: all .2s;
+  border-radius: 100px;
+  
+}
+
+/*header style*/
+.header {
+  background-image: url('./Image/portfolio.background.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.netlify-container {
+  color: var(--twoThree);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 8rem 3rem;
+  height: 70rem;
+  flex-direction: row;
+  
+  
+  
+  
+}
+
+.netlify h1{
+  text-align: center;
+}
+
+
+.netlify a {
+  
+  border: none;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  font-size: 1.3rem;
+  margin: 1.5rem;
+  color:var(--twoThree) !important;
+  font-weight: 100;
+  font-family: Playfair Display;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+
+  /*   color: white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 10px;
+  padding: .8rem 2.1rem;
+  border-radius: 100px;
+  background-image: linear-gradient(to right bottom, var(--om) 15%, var(--23));
+  font-size: 18px; */
+}
+
+
+
+
+
+.netlify a:hover{
+  text-decoration: none;
+  color: var(--om)!important;
+  letter-spacing: 4px;
+  border-bottom: 1px solid var(--om);
+  border-top: 1px solid var(--om);
+  text-shadow: 2px 3px 5px lightgrey;
+  transition: all .7s
+}
+
+.netlify a:active {
+  background-color: transparent
+    ;
+/*   color: white !important; */
+/*   box-shadow: inset 50rem 0rem 0rem white; */
+  transition: all .03s;
+ border-radius: 500px;
+  
+
+  
+   
+}
+
+
+
+
+/*    Home */
+.overlay {
+  position: absolute;
+  min-height: 105%;
+  min-width: 100%;
+  left: 0;
+  top: 0;
+  background: rgba(248, 245, 245, 0.685);
+}
+
+.description {
+  position: absolute;
+  top: 40%;
+  margin: auto;
+  margin-left: 2.3em;
+  padding: 2.1em;
+  height: 100vh;
+}
+
+.description h1::before {
+  content: "";
+  background-color: var(--twoThree);
+  width: 35px;
+  height: 60px;
+}
+.description h1 {
+  color: var(--om);
+  font-family: "Lora";
+}
+
+.description p {
+  color: var(--twoThree);
+  font-size: 20px;
+  width: 100%;
+  font-family: "Merriweather Display";
+ 
+  margin-left: 1em;
+  text-align: left;
+  line-height: 1.5;
+}
+
+#profile-link {
+  border: none;
+  background-image: linear-gradient(to right bottom, var(--om) 15%, var(--twoThree));
+  border-radius: 5px;
+  padding: 0.4rem 1.3rem;
+  color: #fff;
+  margin-right: 1rem;
+  font-size: 1.3rem;
+  box-shadow: 0 1.1rem 2rem #D0D0D0;
+  transition:  all.2s;
+    
+}
+
+#profile-link:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 1.1rem 1.9rem var(--twoThree);
+}
+
+/* About */
+.about {
+  margin: 5em 0;
+  padding: 1.5em 2em;
+  position: relative;
+  font-family: "Lora";
+}
+.about h1 {
+  color: var(--om);
+  margin: 2em;
+  
+}
+
+
+.about img {
+  height:57%;
+  width: 45%;
+  border: 4px solid whitesmoke;
+  margin: 25%;
+  border-radius: 1000rem;
+  box-sizing: border-box;
+}
+
+.desc {
+  padding: 2em;
+  margin-top: 2em;
+  border-left: 2px solid var(--om);
+}
+.desc h1 {
+  color: var(--om);
+  margin: 2em;
+  font-family: "Lora";
+ 
+}
+
+.desc h3 {
+  color: #000;
+}
+
+.desc p {
+  line-height: 2;
+  color:var(--twoThree);
+  padding: 2rem 3.7rem;
+}
+
+/*Portfolio*/
+.portfolio {
+  margin: 4em 0;
+  position: relative;
+}
+.portfolio h1 {
+  color: var(--om);
+  margin: 2em;
+  font-family: "Lora";
+}
+.portfolio img {
+  height: 100%;
+  width: 100%;
+  margin: 0.2em;
+}
+
+.portfolio img:hover {
+  transform: translateX(3px) translateY(-15px) scale(1.6);
+  z-index: 50;
+  position: absolute;
+  outline: 7px double var(--om);
+  outline-offset: 15px;
+}
+
+.portfolio img:not(:hover) {
+  z-index: -50;
+  opacity: 0.9;
+}
+
+.blog {
+  margin: 4em 0;
+  position: relative;
+}
+.blog h1 {
+  color: var(--om);
+  margin: 2em;
+  font-family: "Lora";
+}
+
+
+
+.blog .card {
+  box-shadow: 0 5px 20px 9px whitesmoke;
+  height: 35rem;
+  width: 26rem;
+
+
+}
+.card-img{
+  height: 60%;
+  width: 98%;
+  border-bottom: 2px solid whitesmoke;
+  
+}
+ .card img {
+ 
+  width: 100%;
+  height: 100%;
+ 
+}
+.blog .card-title {
+  color: var(--om);
+  text-align: center;
+  font-size: 1.3rem;
+}
+.blog .card-body {
+  padding: .1rem;
+  
+}
+.card-footer a:link
+ {
+  background-color: #f44336;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.card-footer a:hover,
+a:active {
+  background-color: var(--om);
+  color: black;
+}
+
+
+
+.card-text{
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  margin: 1.5rem 1rem;
+  background: var(--om);
+  padding: 1rem 3rem;
+  border-radius: 4px;
+}
+
+
+
+.card-link{
+  color: var(--om);
+  display: flex;
+  
+  justify-content: flex-start;
+  font-family: Playfair Display;
+  font-size: 1.2rem;
+  margin: .5rem 2rem;
+  padding: .5rem 2rem;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  
+  
+  
+}
+
+.card-link:hover{
+  letter-spacing: 2px;
+   color: var(--twoThree);
+  border-top: 1px solid var(--twoThree);
+  transition: all 2s;
+  border-bottom: 1px solid var(--twoThree);
+}
+
+.card-link:active{
+   transition: all .03s;
+   background: transparent;
+   border-radius: 500px;
+}
+
+.project {
+  margin: 4em 0;
+  position: relative;
+}
+.project h1 {
+  color: var(--om);
+  margin: 2em;
+  font-family: "Lora";
+}
+.project .item {
+  position: relative;
+  height: 300px;
+  transition: all 3s;
+}
+
+.project img {
+  height: 45%;
+  width: 145%;
+  
+}
+
+.project .des {
+  background: #000;
+  color: white;
+  text-align: center;
+  border-bottom-left-radius: 50%;
+}
+
+.project .item:hover .des {
+  height: 90%;
+  color: white;
+  background: var(--twoThree);
+  opacity: 0.8;
+  position: absolute;
+  width: 98%;
+  padding: 1em;
+  top: 0;
+  border-bottom-left-radius: 10;
+}
+
+.contact-form h1 {
+  padding: 1em 1px;
+  color: var(--om);
+  font-family: "Lora";
+}
+
+.contact-form h3 {
+
+  text-align: center;
+  color: var(--twoThree);
+  font-size: 25px;
+  word-spacing: 10px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+  font-family: Playfair Display;
+  
+}
+
+@media only screen and (max-width: 1000px) {
+  .nav-link {
+    font-size: 15px;
+  }
+
+  .header {
+    margin-top: 250px;
+  }
+  .header h1 {
+    margin-top: 120px;
+  }
+
+  .overlay {
+    margin-top: 250px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header h1 {
+    font-size: 30px;
+  }
+  .header p {
+    font-size: 18px;
+  }
+  .header {
+    background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2018%2F05%2F15%2F21%2F36%2Fbackground-3404345_640.jpg&f=1&nofb=1);
+  }
+  .about img {
+    display: block;
+    margin: 0 auto;
+    margin-left: 0 auto;
+    height: 90%;
+    width: 60%;
+
+    border-radius: 100%;
+  }
+  .about {
+    margin: 2em 0;
+    padding: 0.5em;
+    position: relative;
+  }
+  .desc h1 {
+    color: #f8070a;
+    text-align: center;
+    margin: 30px;
+    font-size: 30px;
+  }
+  .desc h3 {
+    font-size: 22px;
+  }
+  .portfolio h1 {
+    font-size: 30px;
+  }
+
+  .blog h1 {
+    font-size: 30px;
+  }
+  .project h1 {
+    font-size: 30px;
+  }
+
+  .contact-form h1 {
+    font-size: 30px;
+  }
+}
+
+
+
+
+
+@media (max-width: 991px) {
+
+  
+  .nav-link{
+    display: flex;
+    flex-wrap: no-wrap;
+    flex-direction: row;
+    flex: 2 2 40%;
+  }
+}
